@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>憧れの内定へ。もう回答に詰まらない | 面トレ</title>
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="憧れの内定へ。もう回答に詰まらない | 面トレ">
+    <meta property="og:description" content="志望業界特化AIが多角的に深掘り。5大商社・大手メーカー内定者が愛用する面接トレーニングサービス。先着25名限定で無料。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mentre-lp.netlify.app/">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5HME458ZR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K5HME458ZR');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー - モダンなHero Section */
+        .hero {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFB800 100%);
+            color: white;
+            padding: 80px 0 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            width: 120%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 40%, transparent 70%);
+            transform: translateX(-50%);
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+        
+        @keyframes heroGlow {
+            0% { transform: translateX(-50%) scale(1); opacity: 0.3; }
+            100% { transform: translateX(-50%) scale(1.1); opacity: 0.6; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 5.5rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            line-height: 1.1;
+            color: #ffffff;
+            animation: titlePulse 3s ease-in-out infinite alternate;
+            position: relative;
+            z-index: 3;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero h1::before {
+            display: none;
+        }
+        
+        @keyframes titlePulse {
+            0% { 
+                transform: scale(1);
+                filter: brightness(1) contrast(1);
+            }
+            100% { 
+                transform: scale(1.02);
+                filter: brightness(1.1) contrast(1.1);
+            }
+        }
+        
+        .hero .subtitle {
+            font-size: 1.6rem;
+            margin-bottom: 50px;
+            opacity: 0.95;
+            line-height: 1.6;
+            font-weight: 600;
+            text-shadow: 
+                0 2px 8px rgba(0,0,0,0.2),
+                0 0 20px rgba(255,255,255,0.3);
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+            color: rgba(255,255,255,0.95);
+        }
+        
+        .hero-cta-container {
+            margin-bottom: 80px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .hero-mockup-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .hero-mockup {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 8px;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-mockup::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .mockup-inner {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Enhanced CTA Button */
+        .cta-button {
+            display: block;
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            color: white;
+            padding: 22px 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 
+                0 10px 30px rgba(30, 58, 138, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 0 auto 15px auto;
+            width: fit-content;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 15px 40px rgba(30, 58, 138, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+        }
+        
+        .cta-note {
+            font-size: 1rem;
+            margin-top: 15px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            display: block;
+            animation: urgentPulse 2s infinite;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+        
+        @keyframes urgentPulse {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+            }
+            50% { 
+                transform: scale(1.02);
+                box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+            }
+        }
+        
+        /* マイクロCTAセクション用の緊急性表示 */
+        .micro-cta-section .cta-note {
+            color: white;
+            background: rgba(30, 58, 138, 0.9);
+            border: 2px solid rgba(30, 58, 138, 0.5);
+        }
+        
+        .micro-cta {
+            background: #FF6B35;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto 10px auto;
+            width: fit-content;
+        }
+        
+        .micro-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            background: #E55B2B;
+        }
+        
+        /* セクション共通 */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1E3A8A;
+            font-weight: bold;
+        }
+        
+        /* 問題提起 */
+        .problems {
+            background: #f8fafc;
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 80px 0;
+                min-height: 90vh;
+            }
+            
+            .hero h1 {
+                font-size: 3.2rem;
+                line-height: 1.2;
+                padding: 0 10px;
+                margin-bottom: 35px;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.3rem;
+                padding: 0 10px;
+                line-height: 1.5;
+                font-weight: 600;
+            }
+            
+            .hero-cta-container {
+                margin-bottom: 60px;
+            }
+            
+            .hero-mockup-container {
+                max-width: 90%;
+            }
+            
+            .hero-mockup {
+                padding: 6px;
+                border-radius: 15px;
+            }
+            
+            .mockup-inner {
+                border-radius: 12px;
+            }
+            
+            .usage-title {
+                font-size: 1.8rem;
+            }
+            
+            .usage-subtitle {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 40px;
+            }
+            
+            .problems-grid,
+            .strengths-grid,
+            .testimonials-grid,
+            .flow-steps {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .problem-item,
+            .strength-item {
+                padding: 25px 20px;
+            }
+            
+            .testimonial-item {
+                padding: 30px 20px;
+            }
+            
+            .flow-step {
+                padding: 30px 20px;
+            }
+            
+            .cta-button {
+                padding: 18px 30px;
+                font-size: 1.2rem;
+                width: 90%;
+                max-width: 320px;
+            }
+            
+            .micro-cta {
+                padding: 15px 25px;
+                font-size: 1rem;
+                width: 85%;
+                max-width: 280px;
+            }
+            
+            .cta-note {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+                margin-top: 12px;
+                width: 90%;
+                max-width: 350px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .service-image-container {
+                border-radius: 15px;
+                padding: 15px;
+                margin: 0 10px;
+            }
+            
+            .chat-area {
+                padding: 20px 15px;
+            }
+            
+            .user-input-area textarea {
+                height: 60px;
+                font-size: 0.9rem;
+            }
+            
+            .input-options {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .voice-input, .submit-btn {
+                width: 100%;
+                padding: 12px;
+            }
+            
+            .offer-title {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+            
+            .final-message {
+                font-size: 1.5rem;
+            }
+            
+            .sub-message {
+                font-size: 1rem;
+                padding: 0 10px;
+            }
+            
+            .faq-question {
+                padding: 20px;
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                padding: 20px;
+                font-size: 0.95rem;
+            }
+            
+            .testimonial-content {
+                font-size: 1rem;
+            }
+            
+            .strength-title {
+                font-size: 1.2rem;
+            }
+            
+            .strength-description {
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .usage-title {
+                font-size: 1.6rem;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 16px 25px;
+            }
+            
+            .micro-cta {
+                font-size: 0.95rem;
+                padding: 14px 20px;
+            }
+            
+            .container {
+                padding: 0 12px;
+            }
+            
+            .service-image-container {
+                margin: 0 5px;
+                padding: 12px;
+            }
+            
+            .offer-title {
+                font-size: 1.6rem;
+            }
+            
+            .hero-mockup {
+                padding: 4px;
+            }
+        }
+        
+        /* 利用イメージ */
+        .usage-image {
+            text-align: center;
+            background: white;
+        }
+        
+        .usage-title {
+            font-size: 2.8rem;
+            color: #1E3A8A;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .usage-subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: normal;
+        }
+        
+        .service-image-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .mock-interface {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .interface-header {
+            background: linear-gradient(135deg, #FF6B35, #FFB800);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .interface-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .interface-status {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .chat-area {
+            padding: 30px;
+        }
+        
+        .ai-message {
+            background: #f1f5f9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #FF6B35;
+        }
+        
+        .message-sender {
+            font-weight: bold;
+            color: #1E3A8A;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .message-content {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .user-input-area {
+            margin-top: 20px;
+        }
+        
+        .input-label {
+            font-weight: bold;
+            color: #1E3A8A;
+            margin-bottom: 10px;
+        }
+        
+        .user-input-area textarea {
+            width: 100%;
+            height: 80px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 1rem;
+            resize: none;
+            margin-bottom: 15px;
+        }
+        
+        .input-options {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
+        
+        .voice-input, .submit-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .voice-input {
+            background: #e2e8f0;
+            color: #64748b;
+        }
+        
+        .submit-btn {
+            background: #FF6B35;
+            color: white;
+        }
+        
+        .voice-input:hover {
+            background: #cbd5e1;
+        }
+        
+        .submit-btn:hover {
+            background: #E55B2B;
+        }
+
+        /* 問題提起とサービス強み - 読みやすいレイアウト */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .problem-item,
+        .strength-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .problem-item {
+            border-left: 4px solid #FF6B35;
+        }
+        
+        .strength-item {
+            border: 2px solid transparent;
+            text-align: center;
+        }
+        
+        .problem-item:hover,
+        .strength-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        
+        .strength-item:hover {
+            border-color: #FFB800;
+        }
+        
+        .problem-item::before {
+            content: "😰";
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .problem-item h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1E3A8A;
+            line-height: 1.3;
+        }
+        
+        .problem-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .strength-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .strength-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1E3A8A;
+            margin-bottom: 15px;
+        }
+        
+        .strength-description {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        /* マイクロCTA */
+        .micro-cta-section {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(45deg, #FF6B35, #FFB800);
+        }
+        
+        /* 利用者の声 */
+        .testimonials {
+            background: #f8fafc;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-item {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-item::before {
+            content: '"';
+            font-size: 4rem;
+            color: #FFB800;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #1E3A8A;
+            text-align: right;
+        }
+        
+        /* 利用の流れ */
+        .flow-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .flow-step {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .flow-step:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            background: #FF6B35;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #1E3A8A;
+            margin-bottom: 15px;
+        }
+        
+        /* 限定オファー */
+        .limited-offer {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFB800 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .limited-offer::before {
+            content: '🔥';
+            font-size: 8rem;
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            opacity: 0.2;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .offer-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .offer-title {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .offer-text {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        
+        .urgency-text {
+            font-size: 1.1rem;
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: #f8fafc;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            background: #1E3A8A;
+            color: white;
+            padding: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .faq-answer {
+            padding: 25px;
+            display: none;
+            line-height: 1.8;
+        }
+        
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* 最終CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .final-message {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .sub-message {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        /* フッター */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .footer-content {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .usage-title {
+                font-size: 2.2rem;
+            }
+            
+            .usage-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .strengths-grid,
+            .testimonials-grid,
+            .flow-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .service-image {
+                border-radius: 15px;
+            }
+        }
+        
+        /* アニメーション */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー・ファーストビュー -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>憧れの内定へ。<br>もう回答に詰まらない</h1>
+                <p class="subtitle">志望業界を徹底分析したAI面接官が多角的にあなたを深堀る！<br>あらゆる質問への対応力を身に着けよう！</p>
+                
+                <div class="hero-cta-container">
+                    <a href="https://app.mensetsu-training.biz" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Main CTA'});">今すぐ面接を始める！</a>
+                    <div class="cta-note">⚠️ ご利用は先着25名まで。締切後は次回募集までお待ちください。</div>
+                </div>
+
+                <!-- Hero Mockup -->
+                <div class="hero-mockup-container">
+                    <div class="hero-mockup">
+                        <div class="mockup-inner">
+                            <div class="mock-interface">
+                                <div class="interface-header">
+                                    <div class="interface-title">商社 - 二次面接</div>
+                                    <div class="interface-status">質問3問目　深堀りレベル2</div>
+                                </div>
+                                <div class="chat-area">
+                                    <div class="ai-message">
+                                        <div class="message-sender">AI面接官</div>
+                                        <div class="message-content">
+                                            田中さん、フットサルサークルの立ち上げ、素晴らしいですね。ゼロから50人規模まで拡大されたとのこと、その手腕に感服します。<br><br>
+                                            先ほど、勧誘活動をされたというお話でしたが、具体的にどのような工夫をされましたか？また、50人という目標を達成するために、メンバー間でどのように役割分担をされたのか、詳しく教えていただけますか？
+                                        </div>
+                                    </div>
+                                    <div class="user-input-area">
+                                        <div class="input-label">あなたの回答</div>
+                                        <textarea placeholder="こちらに回答を入力してください..." readonly></textarea>
+                                        <div class="input-options">
+                                            <button class="voice-input">🎤 音声入力</button>
+                                            <button class="submit-btn">回答する</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問題提起 -->
+    <section class="section problems">
+        <div class="container">
+            <h2 class="section-title fade-in">こんな悩みありませんか？</h2>
+            <div class="problems-grid">
+                <div class="problem-item fade-in">
+                    <h3>面接で何を聞かれるかわからず不安</h3>
+                    <p>業界特有の質問や予想外の深堀りに対応できるか心配...</p>
+                </div>
+                <div class="problem-item fade-in">
+                    <h3>深掘り質問にうまく答えられない</h3>
+                    <p>「なぜ？」「どうして？」の連続で言葉に詰まってしまう...</p>
+                </div>
+                <div class="problem-item fade-in">
+                    <h3>面接練習の機会が少ない</h3>
+                    <p>友達や先輩に頼むのも限界があるし、本格的な練習ができない...</p>
+                </div>
+                <div class="problem-item fade-in">
+                    <h3>本番で緊張して思うように話せない</h3>
+                    <p>準備していても、実際の面接では頭が真っ白になってしまう...</p>
+                </div>
+                <div class="problem-item fade-in">
+                    <h3>業界特有の質問への対策ができていない</h3>
+                    <p>志望業界ならではの質問パターンを知らずに面接に臨んでいる...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 利用イメージ -->
+    <section class="section usage-image">
+        <div class="container">
+            <h2 class="usage-title fade-in">自信を持って面接へ</h2>
+            <h3 class="usage-subtitle fade-in">各業界の選考を分析した就活特化AIが面接官となり、<br>実際の面接形式であなたを深堀ります</h3>
+            <div class="image-label fade-in" style="text-align: center; margin-bottom: 20px; font-size: 1.1rem; font-weight: bold; color: #1E3A8A;">【より詳細な利用画面イメージ】</div>
+            <div class="service-image-container fade-in">
+                <div class="mock-interface">
+                    <div class="interface-header">
+                        <div class="interface-title">商社 - 二次面接</div>
+                        <div class="interface-status">質問3問目　深堀りレベル2</div>
+                    </div>
+                    <div class="chat-area">
+                        <div class="ai-message">
+                            <div class="message-sender">AI面接官</div>
+                            <div class="message-content">
+                                田中さん、フットサルサークルの立ち上げ、素晴らしいですね。ゼロから50人規模まで拡大されたとのこと、その手腕に感服します。<br><br>
+                                先ほど、勧誘活動をされたというお話でしたが、具体的にどのような工夫をされましたか？また、50人という目標を達成するために、メンバー間でどのように役割分担をされたのか、詳しく教えていただけますか？
+                            </div>
+                        </div>
+                        <div class="user-input-area">
+                            <div class="input-label">あなたの回答</div>
+                            <textarea placeholder="こちらに回答を入力してください..." readonly></textarea>
+                            <div class="input-options">
+                                <button class="voice-input">🎤 音声入力</button>
+                                <button class="submit-btn">回答する</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 区切り線 -->
+    <div class="section-divider" style="height: 2px; background: linear-gradient(90deg, transparent, #FFB800, transparent); margin: 0; opacity: 0.6;"></div>
+
+    <!-- サービスの強み -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">面トレの5つの強み</h2>
+            <div class="strengths-grid">
+                <div class="strength-item fade-in">
+                    <span class="strength-icon">🏢</span>
+                    <h3 class="strength-title">業界別カスタマイズ面接</h3>
+                    <p class="strength-description">志望業界ごとに面接の深堀り内容が異なるため、<br>業界特有の質問パターンに完全対応</p>
+                </div>
+                <div class="strength-item fade-in">
+                    <span class="strength-icon">🤖</span>
+                    <h3 class="strength-title">AI による動的質問生成</h3>
+                    <p class="strength-description">回答内容により毎回深堀り質問が変わるため、<br>いろいろな角度からの質問への準備ができる</p>
+                </div>
+                <div class="strength-item fade-in">
+                    <span class="strength-icon">⏰</span>
+                    <h3 class="strength-title">時間選択制</h3>
+                    <p class="strength-description">面接時間を5分、15分、25分から選択可能。<br>スキマ時間でも面接練習ができる</p>
+                </div>
+                <div class="strength-item fade-in">
+                    <span class="strength-icon">🎤</span>
+                    <h3 class="strength-title">音声入力対応</h3>
+                    <p class="strength-description">音声入力が可能なので、<br>実際の本番に近い形で声に出して面接練習ができる</p>
+                </div>
+                <div class="strength-item fade-in">
+                    <span class="strength-icon">📈</span>
+                    <h3 class="strength-title">面接段階別練習</h3>
+                    <p class="strength-description">一次面接、二次面接、最終面接から選択可能。<br>それぞれ異なる深堀り方法で様々なシチュエーションを想定</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- マイクロCTA① -->
+    <section class="micro-cta-section">
+        <div class="container">
+            <a href="https://app.mensetsu-training.biz" class="micro-cta" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Micro CTA 1'});">今すぐ面接を始める！</a>
+            <div class="cta-note">⚠️ ご利用は先着25名まで。締切後は次回募集までお待ちください。</div>
+        </div>
+    </section>
+
+    <!-- 利用者の声 -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">利用者の声</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item fade-in">
+                    <div class="testimonial-content">
+                        このAI面接官から聞かれた質問が<strong>実際に本番で聞かれました</strong>。事前に準備していたので自信を持って答えられた！
+                    </div>
+                    <div class="testimonial-author">— 5大商社複数内定</div>
+                </div>
+                <div class="testimonial-item fade-in">
+                    <div class="testimonial-content">
+                        模擬面接と振り返りを徹底したおかげで、<strong>初見の質問が</strong>ほぼ<strong>なくなりました</strong>。ワンパターンじゃなくて<strong>色々な深堀りをしてくれて対応力が上がった</strong>！
+                    </div>
+                    <div class="testimonial-author">— 5大商社複数内定</div>
+                </div>
+                <div class="testimonial-item fade-in">
+                    <div class="testimonial-content">
+                        <strong>志望業界に特化した面接</strong>でガクチカや志望動機を深堀りしてくれたし、音声入力で回答ができたので、<strong>実際の面接のよう</strong>に経験を積めました。
+                    </div>
+                    <div class="testimonial-author">— メガバン&大手メーカー内定</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 利用の流れ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">利用の流れ（簡単6ステップ）</h2>
+            <div class="flow-steps">
+                <div class="flow-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">新規登録</h3>
+                    <p>簡単な情報入力で即座に登録完了</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">ログイン</h3>
+                    <p>登録したアカウントでログイン</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">面接設定選択</h3>
+                    <p>志望業界・面接時間（5分・15分・25分）・面接フェーズ（一次・二次・最終）を選択</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">AI面接開始</h3>
+                    <p>志望業界や面接フェーズを踏まえ、就活特化AIが面接形式で深堀り質問</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">面接回答</h3>
+                    <p>音声入力/テキスト入力で実際の面接さながらに回答</p>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">振り返り</h3>
+                    <p>面接終了後は質問と回答を振り返り、改善点を把握</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- マイクロCTA② -->
+    <section class="micro-cta-section">
+        <div class="container" style="text-align: center;">
+            <!-- マイクロCTAを削除 -->
+        </div>
+    </section>
+
+    <!-- 先着25名限定オファー -->
+    <section class="section limited-offer" style="padding: 50px 0;">
+        <div class="container">
+            <div class="offer-content">
+                <h2 class="offer-title fade-in" style="margin-bottom: 25px;">🔥 先着25名限定オファー 🔥</h2>
+                <a href="https://app.mensetsu-training.biz" class="cta-button fade-in" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Limited Offer CTA'});">今すぐ登録して面接を始めよう</a>
+                <div class="offer-note fade-in" style="margin-top: 20px; font-size: 1rem; font-weight: 600; color: white; background: rgba(255, 255, 255, 0.2); padding: 12px 20px; border-radius: 25px; border: 2px solid rgba(255, 255, 255, 0.3); display: inline-block;">
+                    ご利用は先着25名まで。締切後は次回募集までお待ちください。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <h2 class="section-title fade-in">よくある質問</h2>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">先着25名限定ですか？</div>
+                    <div class="faq-answer">はい、先着25名様限定でお使いいただけます。定員に達した場合は、新規の募集までお待ちください。</div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">利用料はいくらですか？</div>
+                    <div class="faq-answer">はい、利用料は無料となります。<br>なお今後サービス拡大に伴い、面接トレーニングの回数に応じた課金制等に変更する可能性がございますが、その際は改めて皆様にご連絡いたします。</div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">面接の質問は毎回変わりますか？</div>
+                    <div class="faq-answer">はい、変わります。各業界を徹底分析した就活特化のAIを面接官に採用しており、同じ回答内容でも毎回深堀り方を変えているため、様々な面接質問への対応力をつけていただければと思います。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="section final-cta">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2 class="final-message fade-in">面接力向上は反復練習が全て</h2>
+                <p class="sub-message fade-in">志望業界特化AIとの面接トレーニングで、あらゆる質問への対応力を身につけ、憧れの内定を掴もう</p>
+                <div style="text-align: center;">
+                    <a href="https://app.mensetsu-training.biz" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Final CTA'});">今すぐ面接を始める！</a>
+                    <div class="cta-note">⚠️ ご利用は先着25名まで。締切後は次回募集までお待ちください。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">お問い合わせ：mensetsu.training.shukatsu@gmail.com</div>
+                <div>© 2025 面トレ</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // スクロールアニメーション
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // 全ての fade-in 要素を監視
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+
+        // FAQ アコーディオン
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // 他のFAQを閉じる
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // クリックされたFAQをトグル
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+        // スムーススクロール
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // CTA クリック追跡
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctaButtons = document.querySelectorAll('.cta-button, .micro-cta');
+            
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    // Google Analytics イベント送信（既に onclick で設定済み）
+                    console.log('CTA clicked:', button.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
