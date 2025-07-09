@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://mensetsu-training.biz/sitemap.xml
+
+# 不要なページのクロール防止（必要に応じて）
+Disallow: /admin/
+Disallow: /test/
